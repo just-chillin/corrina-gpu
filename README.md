@@ -88,6 +88,7 @@ touching the hardware; that check is the only memory protection there is.
   cycles for the 320x240 demo frame.
 - `SUBMIT` blocks, and jobs from different clients are serialised by a mutex.
 - No buffer mmap: the kernel's Rust GEM abstraction has none for DMA memory.
-- The RTL has been simulated and linted, not synthesised or timed.
+- The RTL simulates, lints clean and passes generic Yosys synthesis. It has not
+  been mapped to a device or timed.
 - `owns_edge` in `rtl/fxg_gpu.v` is a stub: shared triangle edges are drawn
   twice. See the TODO there.

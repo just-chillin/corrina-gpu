@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: GPL-2.0
+
+config DRM_FXG
+	tristate "FXG-1 GPU (Rust DRM render driver)"
+	depends on DRM=y
+	depends on PCI
+	depends on RUST
+	depends on HAS_DMA
+	default n
+	help
+	  Rust DRM render driver for the FXG-1 GPU, a small PCIe GPU with
+	  programmable vertex and fragment shaders.
+
+	  If M is selected, the module will be called fxg.

@@ -1,0 +1,7 @@
+sim/obj_tb/
+sim/obj_bridge/
+sim/fxg_shaders.h
+demo/fxg_demo
+demo/fxg_shaders.h
+*.ppm
+__pycache__/
